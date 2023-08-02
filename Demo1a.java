@@ -28,9 +28,9 @@ class Tilaisuus {
 }
 
 class Varaus {
-    Esiintyja esiintyja;
-    Asiakas asiakas;
-    Tilaisuus tilaisuus;
+    protected Esiintyja esiintyja;
+    protected Asiakas asiakas;
+    protected Tilaisuus tilaisuus;
 }
 
 
