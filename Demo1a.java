@@ -10,24 +10,34 @@ public class Demo1a {
 class Esiintyja {
     protected String nimi;
     protected String erikoisala;
-    }
+    protected double palkkio;
 }
+
 
 class Asiakas {
     protected String nimi;
     protected String kayttajaTunnus;
     protected String salasana;
-    }
 }
+
 
 class Tilaisuus {
     protected String osoite;
     protected String tyyppi;
-    protected double palkkio;
     protected boolean onEsiintyja;
-    }
 }
 
-class EsiintyjatTilaisuuksiin {
-    }
+class Varaus {
+    Esiintyja esiintyja;
+    Asiakas asiakas;
+    Tilaisuus tilaisuus;
 }
+
+
+class EsiintyjatTilaisuuksiin {
+    ArrayList<Esiintyja> esiintyjat;
+    ArrayList<Asiakas> asiakkaat;
+    ArrayList<Tilaisuus> tilaisuudet;
+    ArrayList<Varaus> varaukset;
+}
+
